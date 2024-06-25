@@ -2,12 +2,47 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles1.css">
-  <title>Pantalla de Autenticación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Virtual 360°</title>
+<style>
+    body {width: 1300px; height: 50px; background: rgb(207, 207, 207);}
+    h1 {color: rgb(5, 28, 58); text-align: center; font-family: Georgia, Times, 'Times New Roman', serif;}
+    h4 {color: rgb(11, 79, 131); height: 30px; text-align: center;}
+    li {width: 70px; color: black; }
+    .image-container {
+        float: right;
+        margin-left: 10px; /*Añade un margen a la izquierda para separar la imagen del contenido*/
+    }
+</style>
 </head>
 <body>
-   
+<div class="image-container">
+    <img src="imagenes/LogoVirtual360.png" class="rounded-circle" alt="cinque Terre" width="144" height="136">
+</div>
+<div class="container">
+    <h1>Virtual 360°</h1>
+    <h4>¡Bienvenido a la revolución de la inmersión digital!</h4>
+    <br>
+    <!-- Botones de navegación -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item"><a href="Index.html">Inicio</a></li>
+        <li class="nav-item"><a href="Explorar.html">Explorar</a></li>
+        <li class="nav-item"><a href="Misentornos.html">Entornos</a></li>
+        <li class="nav-item"><a href="Miperfil.html">Perfil</a></li>
+        <li class="nav-item"><a href="register.html">Registro</a></li>
+        <li class="nav-item"><a href="Login.html">Ingreso</a></li>
+      </ul>
+      <br>
+      <form class="d-flex" action="results.html" method="GET">
+        <input class="form-control me-2" type="text" placeholder="Buscar" name="query" id="searchInput">
+        <button class="btn btn-primary" type="submit">Buscar</button>
+    </form>
+      <br> 
   <div class="container">
     <h2>Iniciar sesión</h2>
     <form id="loginForm">
@@ -21,10 +56,41 @@
     </form>
     <p id="errorMessage" class="error-message"></p>
   </div>
+  <br>
   <!-- Botones de navegación -->
-<ul class="nav nav-tabs">
-  <li class="nav-item"><a href="Index.html">Inicio</a></li>
-</ul>
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a href="Index.html">Inicio</a></li>
+  </ul>
+  <br>
   <!-- Botón "Inicio" para volver a la pagina anterior -->
+  <br>
+  <script>
+    function authenticateUser() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      fetch('http://localhost:3306/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ username, password })
+      })
+      .then(response => response.text())
+      .then(data => {
+        const errorMessage = document.getElementById('errorMessage');
+        if (data === 'Autenticación exitosa') {
+          errorMessage.textContent = '';
+          alert('Inicio de sesión exitoso');
+          // Redirigir o hacer algo después de una autenticación exitosa
+        } else {
+          errorMessage.textContent = 'Usuario o contraseña incorrectos';
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
+    }
+  </script>
 </body>
 </html>

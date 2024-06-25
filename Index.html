@@ -7,11 +7,12 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Virtual 360°</title>
 <style>
-    body {width: 1250px; height: 50px; background: rgb(160, 196, 229);}
-    h1 {color: rgb(15, 36, 63); text-align: center; font-family: Georgia, Times, 'Times New Roman', serif;}
-    h4 {color: rgb(10, 73, 126); height: 30px; text-align: center;}
+    body {width: 1300px; height: 50px; background: rgb(207, 207, 207);}
+    h1 {color: rgb(8, 23, 43); text-align: center; font-family: Georgia, Times, 'Times New Roman', serif;}
+    h4 {color: rgb(18, 48, 73); height: 30px; text-align: center;}
     li {width: 70px; color: black;}
     .image-container {
         float: right;
@@ -37,11 +38,11 @@
         <li class="nav-item"><a href="Login.html">Ingreso</a></li>
       </ul>
       <br>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Buscar">
-        <button class="btn btn-primary" type="button">Buscar</button>
-      </form>
-      <br> 
+      <form class="d-flex" action="results.html" method="GET">
+        <input class="form-control me-2" type="text" placeholder="Buscar" name="query" id="searchInput">
+        <button class="btn btn-primary" type="submit">Buscar</button>
+    </form>
+      <br>  
         <div class="tab-content">
         <div id="inicio" class="tab-pane fade show active">
         <div class="shadow-lg p-3 mb-3 bg-white">
