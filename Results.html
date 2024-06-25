@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Virtual 360°</title>
 <style>
-    body {width: 1250px; height: 50px; background: rgb(207, 207, 207);}
+    body {width: 1250px; height: 50px; background: rgb(231, 231, 231);}
     h1 {color: rgb(5, 28, 58); text-align: center; font-family: Georgia, Times, 'Times New Roman', serif;}
     h4 {color: rgb(11, 79, 131); height: 30px; text-align: center;}
     li {width: 70px; color: black; }
@@ -31,17 +31,17 @@
     <!-- Botones de navegación -->
       <ul class="nav nav-tabs">
         <li class="nav-item"><a href="Index.html">Inicio</a></li>
+        <li class="nav-item"><a href="Miperfil.html">Perfil</a></li>
         <li class="nav-item"><a href="Explorar.html">Explorar</a></li>
         <li class="nav-item"><a href="Misentornos.html">Entornos</a></li>
-        <li class="nav-item"><a href="Miperfil.html">Perfil</a></li>
         <li class="nav-item"><a href="register.html">Registro</a></li>
         <li class="nav-item"><a href="Login.html">Ingreso</a></li>
       </ul>
       <br>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Buscar">
-        <button class="btn btn-primary" type="button">Buscar</button>
-      </form>
+      <form class="d-flex" action="results.html" method="GET">
+        <input class="form-control me-2" type="text" placeholder="Buscar" name="query" id="searchInput">
+        <button class="btn btn-primary" type="submit">Buscar</button>
+    </form>
       <br> 
       <header>
         <!-- Aquí puede ir tu menú de navegación -->

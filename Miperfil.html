@@ -9,10 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Virtual 360°</title>
 <style>
-    body {width: 1300px; height: 50px; background: rgb(207, 207, 207);}
+    body {width: 1300px; height: 50px; background: rgb(231, 231, 231);}
     h1 {color: rgb(15, 36, 63); text-align: center; font-family: Georgia, Times, 'Times New Roman', serif;}
     h4 {color: rgb(26, 78, 121); height: 30px; text-align: center;}
-    li {width: 70px;}
+    li {width: 90px;}
     .image-container {
         float: right;
         margin-left: 10px; /*Añade un margen a la izquierda para separar la imagen del contenido*/
@@ -25,46 +25,61 @@
 </div>
 <div class="container">
     <h1>Virtual 360°</h1>
-    <h4>¡Bienvenido a la revolución de la inmersión digital!</h4>
+    <h4>¡Descubre y Alquila Casas de Campo con Tours Virtuales 360°!</h4>
     <br>
     <!-- Botones de navegación -->
       <ul class="nav nav-tabs">
         <li class="nav-item"><a href="Index.html">Inicio</a></li>
+        <li class="nav-item"><a href="Miperfil.html">Perfil</a></li>
         <li class="nav-item"><a href="Explorar.html">Explorar</a></li>
         <li class="nav-item"><a href="Misentornos.html">Entornos</a></li>
-        <li class="nav-item"><a href="Miperfil.html">Perfil</a></li>
         <li class="nav-item"><a href="register.html">Registro</a></li>
         <li class="nav-item"><a href="Login.html">Ingreso</a></li>
       </ul>
       <br>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Buscar">
-        <button class="btn btn-primary" type="button">Buscar</button>
-      </form>
+      <form class="d-flex" action="results.html" method="GET">
+        <input class="form-control me-2" type="text" placeholder="Buscar" name="query" id="searchInput">
+        <button class="btn btn-primary" type="submit">Buscar</button>
+    </form>
       <br> 
       <div class="tab-content">
         <div id="inicio" class="tab-pane fade show active">
         <div class="shadow-lg p-3 mb-3 bg-white">
           <div class="image-container">
-            <img src="imagenes/casa campestre2.jpg" class="rounded-square" alt="cinque Terre" width="370" height="280">
+            <img src="imagenes/lujosa-casa-campestre_(6).jpeg" class="rounded-square" alt="cinque Terre" width="600" height="360">
         </div> 
-         <p>La sección <b>Mi Perfil</b> es el área donde el usuario puede gestionar su información personal, configurar sus preferencias y acceder a funciones relacionadas con su cuenta.</p>
-         <p><b>Estos elementos se incluyen:</b></p>
-         <ul><b>Información del Usuario:</b> Nombre del usuario, nombre completo, dirección de correo electrónico u otra información basica de identificación.</ul>
-         <ul><b>Avatar o Imagen de Perfil:</b> Se incluye la posibilidad de cargar o cambiar la imagen que representa al usuario.</ul>
-         <ul><b>Historial de actividades:</b> El registro de actividades recientes del usuario, como entornos visitados, comentarios realizados, o entornos creados.</ul>
-         <ul><b>Entornos Creados:</b> Es una sección que muestra los entornos virtuales que el usuario ha creado personalmente.</ul>
-         <ul><b>Favoritos:</b> Es la lista de entornos virtuales marcados como favoritos por el usuario.</ul>
-         <ul><b>Configuración de Privacidad:</b> Se deja la opción para gestionar la privacidad de la cuenta, incluyendo configuraciones de visibilidad y notificaciones.</ul>
-         <ul><b>Preferencias de Usuario:</b> Son las configuraciones personalizadas, como el idioma preferido, notificaciones de correo electrónico, etc.</ul>
-         <ul><b>Cambiar Contraseña:</b> Opción para cambiar contraseña de la cuenta.</ul>
-         <ul><b>Cerrar Sesión:</b> Botón o enlace para cerrar sesión de la cuenta.</ul>
-         <ul><b>Estadisticas del Usuario:</b> Se incluyen las posibles estadisticas del usuario, como el número de entornos creados, entornos visitados, etc.</ul>
-         <ul><b>Editar Perfil:</b> Enlace o botón que permite al usuario editar la información de su perfil.</ul>
-         <ul><b>Historial de Compras:</b> Si se incluye la compra de contenido o servicios, se incluira un historial de compras.</ul>
+         <h4>Sobre Nosotros</h4>
+         <ul><b>Virtual 360° - Tu Puerta a la Naturaleza</b></ul>
+         <ul><b>Nuestra Misión</b></ul>
+         <ul> En <b>Virtual 360°, </b> nos apasiona conectar a las personas con la belleza y la seriedad de la vida en el campo. Nuestra misíon es ofrecer una plataforma innovadora y accesible donde puedas explorar y alquilar casas de campo de manera virtual, desde cualquier lugar del mundo.</ul>
+         <ul><b>¿Quienes Somos?</b></ul>
+         <ul> Somos un equipo dedicado de profesionales con una amplia experiencia en el sector inmobiliario y la tecnología. Nos unimos con la visión de trasformar la manera en que las personas descubren y eligen sus lugares de escapada. Con la tecnología de tours virtuales 360°, hacemos que la búsqueda de la casa de campo perfecta sea una experiencia visual, interactiva y eficiente.</ul>
+         <ul><b>¿Que Hacemos?</b></ul>
+         <ul><b>Tours Virtuales 360°</b></ul>
+         <div class="image-container">
+          <img src="imagenes/2Tdb1zaGl.18_12.jpg" class="rounded-square" alt="cinque Terre" width="580" height="350">
+      </div>
+         <ul> Utilizamos tecnología de punta para crear tours virtuales inmersivos de 360 grados, permitiéndote explorar cada detalle de nuestras propiedades como si estuvieras allí. Ya sea que estés navegando por la web desde tu ordenador, tablet o teléfono móvil, nuestros tours te ofrecen una vista completa y realista de cada casa de campo.</ul>
+         <ul><b>Alquilar de Casas de Campo</b></ul>
+         <ul> Ofrecemos una amplia selección de casas de campo para alquilar, adaptadas a diferentes necesidades y preferencias. Desde acogedoras cabañas para un retiro romántico hasta amplias fincas para eventos familiares, nuestras propiedades están situadas en los entornos más hermosos y tranquilos.</ul>
+         <ul><b>Soporte Personalizado</b></ul>
+         <ul> Nos comprometemos a brindar un servicio al cliente excepcional. Nuestro equipo está disponible para ayudarte en cada paso del proceso, desde la exploración de las propiedades hasta la finalización del alquiler. Estamos aquí para asegurarnos de que encuentres la casa de campo perfecta para tu estancia.</ul>
+         <h4>Por Qué Elegir Virtual 360°</h4>
+         <ul><b>- Innovación:</b> Somos pioneros en la utilización de tours virtuales 360° para la presentación de propiedades de alquiler.</ul>
+         <ul><b>- Conveniencia:</b> Explora y alquila casas de campo desde la comodidad de tu hogar, en cualquier momento y desde cualquier dispositivo.</ul>
+         <ul><b>- Transparencia:</b> Ofrecemos una vista detallada y realista de nuestras propiedades, eliminando las sorpresas y asegurando decisiones informadas.</ul>
+         <ul><b>- Variedad:</b> Contamos con una diversa gama de propiedades en ubicaciones exclusivas, adecuadas para todo tipo de preferencias y necesidades.</ul>
+         <ul><b>- Soporte Integral:</b> Nuestro equipo de soporte está siempre disponible para ofrecer asistencia personalizada y responder a todas tus preguntas.</ul>
+         <ul><b>Nuestro Compromiso</b></ul>
+         <ul> En Virtual 360°, creemos en la importancia de la honestidad y la trasparencia. Nos esforzamos por proporcionar información precisa y detallada sobre cada una de nuestras propiedades, asegurando que nuestros clientes puedan tomar decisiones informadas y seguras. Nos comprometemos a mejorar continuamente nuestra plataforma y servicios para ofrecer la mejor experiencia posible a nuestros usuarios.</ul>
+         <!-- Botón "Arriba" para volver a la pagina anterior -->
+    <nav>
+      <ul class="nav nav-tabs">
+          <li class="nav-item"><a class="nav-link" href="Miperfil.html">Arriba</a></li>
+      </ul>
+  </nav> 
         <br>
       </div>
-    <!-- Botón "Inicio" para volver a la pagina anterior -->  
-<br>
+    <br>
 </body>
 </html>

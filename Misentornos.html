@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Virtual 360°</title>
 <style>
-    body {width: 1250px; height: 50px; background: rgb(190, 213, 255);}
+    body {width: 1300px; height: 50px; background: rgb(231, 231, 231);}
     h1 {color: rgb(15, 36, 63); text-align: center; font-family: Georgia, Times, 'Times New Roman', serif;}
     h4 {color: rgb(26, 78, 121); height: 30px; text-align: center;}
     li {width: 70px;}
@@ -30,34 +30,80 @@
     <!-- Botones de navegación -->
       <ul class="nav nav-tabs">
         <li class="nav-item"><a href="Index.html">Inicio</a></li>
+        <li class="nav-item"><a href="Miperfil.html">Perfil</a></li>
         <li class="nav-item"><a href="Explorar.html">Explorar</a></li>
         <li class="nav-item"><a href="Misentornos.html">Entornos</a></li>
-        <li class="nav-item"><a href="Miperfil.html">Perfil</a></li>
         <li class="nav-item"><a href="register.html">Registro</a></li>
         <li class="nav-item"><a href="Login.html">Ingreso</a></li>
       </ul>
       <br>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Buscar">
-        <button class="btn btn-primary" type="button">Buscar</button>
-      </form> 
+      <form class="d-flex" action="results.html" method="GET">
+        <input class="form-control me-2" type="text" placeholder="Buscar" name="query" id="searchInput">
+        <button class="btn btn-primary" type="submit">Buscar</button>
+    </form>
       <br>
       <div class="tab-content">
         <div id="inicio" class="tab-pane fade show active">
         <div class="shadow-lg p-3 mb-3 bg-white">
           <div class="image-container">
-            <img src="imagenes/casacampo1.jpg" class="rounded-square" alt="cinque Terre" width="380" height="260">
+            <img src="imagenes/casa campestre1.jpg" class="rounded-square" alt="cinque Terre" width="540" height="310">
         </div> 
-         <p>La sección <b>Mis Entornos</b> se refiere a los entornos virtuales que un usuario a creado, guardado como favorito o de alguna manera personalizado según sus preferencias. Esta sección proporciona una experiencia personalizada para los usuarios, permitiéndoles gestionar y acceder fácilmente a los entornos que son significativos para ellos.</p>
-         <p><b>Estas son algunas características comunes que se considera como Entornos:</b></p>
-         <ul><b>Entornos Creados:</b> Son los entornos virtuales que un usuario ha creado personalmente utilizando herramientas de creación de contenido en 360 grados. Esto puede incluir entornos capturados con cámaras 360 grados o creados digitalmente.</ul>
-         <ul><b>Favoritos:</b> Los entornos que un usuario ha marcado como favoritos debido a sus interés o valor personal. Esto permite a los usuarios volver fácilmente a los entornos que más les gusta.</ul>
-         <ul><b>Historial de Visualización:</b> Esta lista permite que el usuario tenga acceso a los entornos que ha visitado previamente, facilitandole que retorne a lugares virtuales específicos.</ul>
-         <ul><b>Entornos Personalizados:</b> Entornos que un usuario a personalizado de alguna manera, ya sea mediante la aplicación de filtros, ajustes de iluminación, o cualquier otra forma de personalización que la plataforma le ofrezca.</ul>
-         <ul><b>Compartidos:</b> Entornos que el usuario ha compartido con otros usuarios o en redes sociales. Esto podría incluir entornos creados por el usuario o aquellos que ha encontrado interesantes y desea recomendar.</ul>
-        <br>
+         <h4>Entornos Virtual 360°</h4>
+         <ul>En <b>Virtual 360°,</b> nos enorgullece presentar una amplia variedad de entornos naturales y casas de campo a través de nuestra tecnología de tours virtuales 360°. Cada propiedad está situada en un entorno único, cuidadosamente seleccionado para ofrecer tranquilidad, belleza y una conexión profunda con la naturaleza.</p></ul>
+         <h4>Tipos de Entornos</h4>
+         <ul><b>1. Montañas</b></ul>
+         <ul><b>Descripción:</b> Nuestras casas de campo en las montañas ofrecen vistas panorámicas inpresionantes, aire freco y un entorno tranquilo. Perfectas para aquellos que buscan aventura y relajación en un mismo lugar.</ul>
+         <div class="image-container">
+          <img src="imagenes/casa3d-8-helena-froufe_04bf5904_1000x1000.png" class="rounded-square" alt="cinque Terre" width="510" height="310">
+      </div> 
+         <ul><b>Actividades:</b></ul>
+         <ul>- Senderismo</ul>
+         <ul>- Escalada</ul>
+         <ul>- Observacipon de Flora y Fauna</ul>
+         <ul><b>Destacados:</b></ul>
+         <ul>- Vistas espectaculares</ul>
+         <ul>- Caminos y senderos naturales</ul>
+         <ul>- Atardeceres inolvidables</ul>
+         <ul><b>2. Bosques</b></ul>
+         <ul><b>Descripción:</b> Las casas ubicadas en bosques densos brindan una experiencia íntima con la naturaleza. Estos entornos son ideales para quienes buscan paz, privacidad y una inmersión total en el verdor.</ul>
+         <div class="image-container">
+          <img src="imagenes/Slider-1-1030x433.jpg" class="rounded-square" alt="cinque Terre" width="540" height="320">
+      </div> 
+         <ul><b>Actividades:</b></ul>
+         <ul>- Caminatas en la naturaleza</ul>
+         <ul>- Avistamiento de aves</ul>
+         <ul>- Fotografía de naturaleza</ul>
+         <ul><b>Destacados:</b></ul>
+         <ul>- Tranquilidad absoluta</ul>
+         <ul>- Riqueza en biodiversidad</ul>
+         <ul>- Espacios para picnics y fogatas</ul>
+         <ul><b>3. Lagos y Ríos</b></ul>
+         <ul><b>Descripción:</b> Disfruta de propiedades situadas junto a lagos y ríos, donde el agua añade un toque especial de serenidad. Perfectas para actividades acuáticas y momentos de relajación junto al agua.</ul>
+         <div class="image-container">
+          <img src="imagenes/lujosa-casa-campestre.jpeg" class="rounded-square" alt="cinque Terre" width="540" height="320">
+      </div> 
+         <ul><b>Actividades:</b></ul>
+         <ul>- Pesca</ul>
+         <ul>- Paseos en bote</ul>
+         <ul>- Natación</ul>
+         <ul><b>Destacados:</b></ul>
+         <ul>- Acceso directo al agua</ul>
+         <ul>- Paisajes reflejados en el lago/río</ul>
+         <ul>- Zonas para barbacoa y descanso</ul>
+         <br>
+         <h4>Beneficos de los Entornos Naturales</h4>
+         <br>
+         <ul><b>- Relajación y Bienestar:</b> Los entornos naturales proueen la relajación y el bienestar, ofreciendo un escape del estrés cotidiano.</ul>
+         <ul><b>- Aventura y Explotación:</b> Cada entorno ofrece una variedad de actividades al aire libre para explorar y disfrutar.</ul>
+         <ul><b>- Conexión con la Naturaleza:</b> Vivir o vacaionar en estos entornos permite una conexión mas profunda y apreciación de la naturaleza.</ul>
+<!-- Botón "Arriba" para volver a la pagina anterior -->
+<nav>
+  <ul class="nav nav-tabs">
+      <li class="nav-item"><a class="nav-link" href="Misentornos.html">Arriba</a></li>
+  </ul>
+</nav> 
+    <br>
       </div>
-    <!-- Botón "Inicio" para volver a la pagina anterior -->  
 <br>
 </body>
 </html>
